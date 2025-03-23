@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Side: Form */
+.form-container {
+    flex: 1;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Mobile Number Input */
+.mobile-container {
+    display: flex;
+    gap: 10px;
+}
+
+.mobile-container select {
+    width: 30%;
+}
+
+.mobile-container input {
+    width: 70%;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Buttons */
+button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 48%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button[type="submit"] {
+    background: #007bff;
+    color: white;
+}
+
+button[type="reset"] {
+    background: #ccc;
+}
+
+/* Right Side: Image */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bfdff1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body {
+    background: url('hero-image1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+
+    .image-container {
+        display: none;
+    }
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}

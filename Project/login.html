@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login .css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Side: Login Form -->
+        <div class="form-container">
+            <h2>Login</h2>
+            
+            <form id="loginForm">
+                <!-- Customer ID -->
+                <label for="customerId">Customer ID</label>
+                <input type="text" id="customerId" name="customerId" minlength="5" maxlength="20" required>
+                <small class="error-message" id="customerIdError"></small>
+
+                <!-- Password -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small class="error-message" id="passwordError"></small>
+
+                <!-- Buttons -->
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </form>
+
+            <!-- Redirect to Registration -->
+            <br><br><p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+
+        
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
